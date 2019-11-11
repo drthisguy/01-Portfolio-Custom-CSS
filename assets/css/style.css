@@ -1,37 +1,122 @@
+  body {
+      background-image: url(../images/gravel.png);
+      margin: 0px;
+  }
   .navbar {
     margin: 0;
     padding: 0;
+    width: 100%;
     background-color: white;
     overflow: hidden;
+    border-bottom: 3px solid #8a8281;
+    border-color: rgba(138,130,129, 0.7); /*So the opacity wouldn't effect my text.*/
   }
   
-  li.link {
+  li.link, li.contact {
       float: right;
       list-style-type: none;
+      padding-top: 15px;
+      border-right: 1px solid transparent;
+      line-height: 1px;
   }
-  li a {
+
+  li.contact {
+    margin-right: 20%;
+  }
+  li.contact a {
+    display: block;
+    
+    
+    color: #8a8281;
+   
+    text-decoration: none;
+    
+    padding: 15px 16px;
+  }
+
+  li.link a {
       display: block;
       color: #8a8281;
       padding: 15px 16px;
-      text-decoration: none;   
+      text-decoration: none;
+      border-right: 2px solid #d9d7d7;
+      line-height: 1px;
   }
 
-  li.name{
+  li.name {
       float: left;
-      text-align: center;
       list-style-type: none;
+      margin-left: 20%;
+      background-color: #2fb5af;
+      color: white;
+      padding-right: 30px;
+      padding-left: 30px;
+      font-family: Arial sans-serif;
   }
 
   li.link a:hover {
     background-color: #111;
   }
 
+  li.contact a:hover {
+    background-color: #111;
+  }
+
+  .cntr {
+      text-align: center;
+  }
+
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    margin-top: 40px;
   }
-  .container {
-      width: 400px;
+  .container{
+      width: 95%;
       height: auto;
-      padding: 2px 16px;
+      padding: 16px;
+  }
+  
+  .undrln {
+      border-bottom: 3px solid #8a8281;
+      border-color: rgba(138,130,129, 0.5); /*So the opacity wouldn't effect my text.*/
+      margin-left: 15px;
+  }
+  h2 {
+      text-align: left;
+      color: #2fb5af;
+      font-size: 30px;
+      background-color: rgba(#fff);
+  }
+
+  #avatar {
+      height: 190px;
+      width: auto;
+      margin: 15px;
+      float: left;
+  }
+
+  p.bio {
+      font-size: 180%;
+      text-align: left;
+      color: #6b6b6b;
+      font-family: Arial, sans-serif;
+  }
+  .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 75px;
+      color: white;
+      text-align: center;
+      background-color: grey;
+      border-top: 10px solid #2fb5af;
+      position: fixed;
+  }
+  .copy {
+      padding-top: 30px;
   }
