@@ -2,6 +2,7 @@
       background-image: url(../images/gravel.png);
       margin: 0px;
   }
+
   .navbar {
     margin: 0;
     padding: 0;
@@ -21,8 +22,9 @@
   }
 
   li.contact {
-    margin-right: 20%;
+    margin-right: 480px;
   }
+
   li.contact a {
     display: block;
     color: #8a8281;
@@ -42,12 +44,12 @@
   li.name {
       float: left;
       list-style-type: none;
-      margin-left: 20%;
+      margin-left: 480px;
       background-color: #2fb5af;
       color: white;
       padding-right: 30px;
       padding-left: 30px;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Georgia', Times, 'Times New Roman', serif;
   }
 
   li.link a:hover {
@@ -64,12 +66,13 @@
 
   .card {
     transition: 0.3s;
-    width: 60%;
+    width: 960px;
     display: inline-block;
     text-align: center;
     background-color: white;
     margin-top: 40px;
   }
+
   .container {
       width: 95%;
       height: auto;
@@ -81,14 +84,16 @@
       border-color: rgba(138,130,129, 0.5); /*So the opacity wouldn't effect my text.*/
       margin-left: 15px;
   }
+
   h2 {
       text-align: left;
       color: #2fb5af;
       font-size: 30px;
       background-color: rgba(#fff);
+      font-family: 'Georgia', Times, 'Times New Roman', serif;
   }
 
-  #avatar {
+  img#avatar {
       height: 190px;
       width: auto;
       margin: 15px;
@@ -99,7 +104,8 @@
       font-size: 180%;
       text-align: left;
       color: #6b6b6b;
-      font-family: Arial, sans-serif;
+      margin: 15px;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   }
   
  
@@ -113,10 +119,11 @@
       margin-left: 10px;
   }
 
-  label{
+  label {
       margin-left: 10px;
       color: grey;
   }
+
   #name-input, #email, #message {
       border: 1px solid  rgba(138,130,129, 0.3); /*So the opacity wouldn't effect my text.*/
 }
@@ -131,6 +138,25 @@
       font-size: 17px;
       margin: 20px 20px;
   }
+  
+  #top, #middle {
+      float: left;
+      margin: 20px 20px 20px 0px;
+  }
+
+  #rpg, #widget {
+      margin-left: 30px;
+  }
+
+  img {
+      height: 220px;
+      width: auto;
+  }
+
+  #bottom {
+      text-align: left;
+      margin-top: 20px 20px 20px 0px;
+  }
 
   .footer {
       left: 0;
@@ -140,9 +166,10 @@
       color: white;
       text-align: center;
       background-color: grey;
-      border-top: 10px solid #2fb5af;
+      border-top: 8px solid #4aaaa5;
       position: fixed;
   }
+
   .copy {
       padding-top: 30px;
   }
