@@ -1,24 +1,25 @@
-  body {
+ body {
       background-image: url(../images/gravel.png);
       margin: 0px;
+      display: flex; flex-direction: column; /*for the flex container*/
+      height: 100vh;  /*for the flex container*/
   }
-
+  
+  /* navigator */
   .navbar {
     margin: 0;
     padding: 0;
     width: 100%;
     background-color: white;
-    overflow: hidden;
-    border-bottom: 3px solid #8a8281;
-    border-color: rgba(138,130,129, 0.7); /*So the opacity wouldn't effect my text.*/
+    border-bottom: 3px solid  #cccccc; 
+    flex-shrink: 0; /*for the flex container*/
   }
   
   li.link, li.contact {
       float: right;
       list-style-type: none;
       padding-top: 15px;
-      border-right: 1px solid transparent;
-      line-height: 1px;
+      line-height: 1px; 
   }
 
   li.contact {
@@ -27,42 +28,40 @@
 
   li.contact a {
     display: block;
-    color: #8a8281;
+    color: #777777;
     text-decoration: none;
     padding: 15px 16px;
   }
 
   li.link a {
       display: block;
-      color: #8a8281;
+      color: #777777;
       padding: 15px 16px;
       text-decoration: none;
-      border-right: 2px solid #d9d7d7;
-      line-height: 1px;
+      border-right: 2px solid  rgba(119,119,119, 0.2); /*opacity would fade text*/
   }
 
   li.name {
       float: left;
       list-style-type: none;
       margin-left: 480px;
-      background-color: #2fb5af;
+      background-color: #4aaaa5;
       color: white;
       padding-right: 30px;
       padding-left: 30px;
       font-family: 'Georgia', Times, 'Times New Roman', serif;
   }
 
-  li.link a:hover {
-    background-color: #111;
+  li.link a:hover, li.contact a:hover {
+    background-color: #4aaaa5;
+    color: white;
   }
 
-  li.contact a:hover {
-    background-color: #111;
-  }
-
-  .cntr {
-      text-align: center;
-  }
+  /* pushes footer and navbar. centers content. */
+  .flex-container {
+    flex: 1 0 auto;
+    text-align: center;
+}
 
   .card {
     transition: 0.3s;
@@ -70,6 +69,7 @@
     display: inline-block;
     text-align: center;
     background-color: white;
+    border-color: #dddddd;
     margin-top: 40px;
   }
 
@@ -80,14 +80,13 @@
   }
   
   .undrln {
-      border-bottom: 3px solid #8a8281;
-      border-color: rgba(138,130,129, 0.5); /*So the opacity wouldn't effect my text.*/
+      border-bottom: 3px solid #dddddd; 
       margin-left: 15px;
   }
 
   h2 {
       text-align: left;
-      color: #2fb5af;
+      color: #4aaaa5;
       font-size: 30px;
       background-color: rgba(#fff);
       font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -104,19 +103,17 @@
   p.bio {
       font-size: 180%;
       text-align: left;
-      color: #6b6b6b;
+      color: #777777;
       margin: 15px;
       font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   }
   
  /* contact.html */
   form, input, textarea {
-      width: 100%;
+      width: 99%;
       text-align: left;
       display: block;
-      margin: 20px;
-      margin-top: 8px;
-      margin-left: 10px;
+      margin: 8px 40px 20px 8px;
   }
 
   label {
@@ -124,25 +121,25 @@
       color: grey;
   }
 
-  #name-input, #email, #message {
-      border: 1px solid  rgba(138,130,129, 0.3); /*So the opacity wouldn't effect my text.*/
+  #name, #email, #message {
+      border: 1px solid  rgba(138,130,129, 0.3); /*Opacity would effect text.*/
 }
 
   .btn {
-      background-color: #2fb5af;
+      background-color: #4aaaa5;
       float: left;
       border: none;
       color: white;
       width: 120px;
-      padding: 15px 25px;
+      height: 40px;
       font-size: 17px;
-      margin: 20px 20px;
+      margin: 0 0 30px 16px;
   }
   
   /* portfolio.html */
-  #top, #middle {
+  #top, #middle, #bottom {
       float: left;
-      margin: 20px 20px 20px 0px;
+      margin: 20px 20px 20px 12px;
   }
 
   #rpg, #widget {
@@ -154,24 +151,17 @@
       width: auto;
   }
 
-  #bottom {
-      text-align: left;
-      margin-top: 20px 20px 20px 0px;
-  }
-
+    /* footer */
   .footer {
-      left: 0;
-      bottom: 0;
       width: 100%;
       margin-top: 75px;
       height: 75px;
       color: white;
       text-align: center;
-      background-color: grey;
+      background-color: #666666;
       border-top: 8px solid #4aaaa5;
-      position: scroll;
+      flex-shrink: 0; /*for the flex container*/
   }
-
   .copy {
       padding-top: 30px;
   }
