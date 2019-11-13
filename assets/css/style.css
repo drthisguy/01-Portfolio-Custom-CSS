@@ -12,7 +12,6 @@
     width: 100%;
     background-color: white;
     border-bottom: 3px solid  #cccccc; 
-    flex-shrink: 0; /*for the flex container*/
   }
   
   li.link, li.contact {
@@ -23,14 +22,7 @@
   }
 
   li.contact {
-    margin-right: 480px;
-  }
-
-  li.contact a {
-    display: block;
-    color: #777777;
-    text-decoration: none;
-    padding: 15px 16px;
+    margin-right: calc(calc(100% - 960px)/2); /*for screen resizes*/
   }
 
   li.link a {
@@ -41,10 +33,17 @@
       border-right: 2px solid  rgba(119,119,119, 0.2); /*opacity would fade text*/
   }
 
+  li.contact a {
+    display: block;
+    color: #777777;
+    text-decoration: none;
+    padding: 15px 16px;
+  }
+
   li.name {
       float: left;
       list-style-type: none;
-      margin-left: 480px;
+      margin-left: calc(calc(100% - 960px)/2); /*fix for screen resizes*/
       background-color: #4aaaa5;
       color: white;
       padding-right: 30px;
@@ -63,7 +62,7 @@
     text-align: center;
 }
 
-  .card {
+.container {
     transition: 0.3s;
     width: 960px;
     display: inline-block;
@@ -73,10 +72,10 @@
     margin-top: 40px;
   }
 
-  .container {
-      width: 95%;
-      height: auto;
-      padding: 16px;
+  .card {
+    width: 95%;
+    height: auto;
+    padding: 16px;
   }
   
   .undrln {
@@ -93,14 +92,14 @@
   }
 
   /* index.html */
-  img#avatar {
+  #avatar {
       height: 190px;
       width: auto;
       margin: 15px;
       float: left;
   }
 
-  p.bio {
+  .bio {
       font-size: 180%;
       text-align: left;
       color: #777777;
@@ -162,6 +161,8 @@
       border-top: 8px solid #4aaaa5;
       flex-shrink: 0; /*for the flex container*/
   }
+
   .copy {
-      padding-top: 30px;
+    position: relative;
+    top: 35px;
   }
