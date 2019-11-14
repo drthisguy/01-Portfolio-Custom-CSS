@@ -2,22 +2,29 @@
       background-image: url(../images/gravel.png);
       margin: 0px;
       display: flex; flex-direction: column; /*for the flex container*/
-      height: 100vh;  /*for the flex container*/
+      height: 100vh;  /*flex container*/
   }
   
   /* navigator */
-  .navbar {
+  nav {
     margin: 0;
     padding: 0;
+    height: 87px;
     width: 100%;
     background-color: white;
     border-bottom: 3px solid  #cccccc; 
   }
   
+  /* unwanted empty space on top */
+  ul {
+      margin: 0;
+      padding: 0;
+  }
+
   li.link, li.contact {
       float: right;
       list-style-type: none;
-      padding-top: 15px;
+      padding-top: 25px;
       line-height: 1px; 
   }
 
@@ -36,17 +43,18 @@
   li.contact a {
     display: block;
     color: #777777;
-    text-decoration: none;
     padding: 15px 16px;
+    text-decoration: none;
   }
 
   li.name {
       float: left;
       list-style-type: none;
-      margin-left: calc(calc(100% - 960px)/2); /*fix for screen resizes*/
+      margin-left: calc(calc(100% - 960px)/2); /*for screen resizes*/
       background-color: #4aaaa5;
       color: white;
-      padding-right: 30px;
+      width: 150pt;
+      font-size: 130%;
       padding-left: 30px;
       font-family: 'Georgia', Times, 'Times New Roman', serif;
   }
@@ -78,17 +86,16 @@
     padding: 16px;
   }
   
+  h2 {
+    text-align: left;
+    color: #4aaaa5;
+    font-size: 30px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
   .undrln {
       border-bottom: 3px solid #dddddd; 
       margin-left: 15px;
-  }
-
-  h2 {
-      text-align: left;
-      color: #4aaaa5;
-      font-size: 30px;
-      background-color: rgba(#fff);
-      font-family: 'Georgia', Times, 'Times New Roman', serif;
   }
 
   /* index.html */
@@ -134,24 +141,24 @@
       font-size: 17px;
       margin: 0 0 30px 16px;
   }
+
+    /* portfolio.html */
+  img {
+    height: 220px; /*needed size for this layout.*/
+    width: auto;
+}
   
-  /* portfolio.html */
   #top, #middle, #bottom {
       float: left;
-      margin: 20px 20px 20px 12px;
+      margin: 20px 20px 12px;
   }
 
   #rpg, #widget {
       margin-left: 30px;
   }
 
-  img {
-      height: 220px; /*needed size for this layout.*/
-      width: auto;
-  }
-
     /* footer */
-  .footer {
+  footer {
       width: 100%;
       margin-top: 75px;
       height: 75px;
