@@ -9,7 +9,6 @@
   nav {
     margin: 0;
     padding: 0;
-    height: 87px;
     width: 100%;
     background-color: white;
     border-bottom: 3px solid  #cccccc; 
@@ -20,6 +19,18 @@
       margin: 0;
       padding: 0;
   }
+
+  li.name {
+    float: left;
+    list-style-type: none;
+    margin-left: calc(calc(100% - 960px)/2); /*for screen resizes*/
+    background-color: #4aaaa5;
+    color: white;
+    width: 150pt;
+    font-size: 130%;
+    padding-left: 30px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
 
   li.link, li.contact {
       float: right;
@@ -47,18 +58,6 @@
     text-decoration: none;
   }
 
-  li.name {
-      float: left;
-      list-style-type: none;
-      margin-left: calc(calc(100% - 960px)/2); /*for screen resizes*/
-      background-color: #4aaaa5;
-      color: white;
-      width: 150pt;
-      font-size: 130%;
-      padding-left: 30px;
-      font-family: 'Georgia', Times, 'Times New Roman', serif;
-  }
-
   li.link a:hover, li.contact a:hover {
     background-color: #4aaaa5;
     color: white;
@@ -71,7 +70,6 @@
 }
 
 .container {
-    transition: 0.3s;
     width: 960px;
     display: inline-block;
     text-align: center;
