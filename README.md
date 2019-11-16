@@ -15,3 +15,10 @@ Contact:  page.c.tyler@gmail.com
 Known bugs.
  
 May have layout difficulties on smart phones, tablets or other small screens.
+
+sources:
+
+css-tricks.com
+w3school.com
+google.com
+stackoverflow.com
