@@ -1,4 +1,4 @@
-# Howmework-1
+# Homework-1
 This is the portfolio homework assignment from homework-1
 
 A file manifest:
