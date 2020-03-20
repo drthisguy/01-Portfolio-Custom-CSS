@@ -1,4 +1,5 @@
 # Homework-1
+
 This is the portfolio homework assignment from homework-1
 
 A file manifest:
@@ -7,6 +8,12 @@ index.html
 contact.html
 portfolio.html
 style.css
+
+
+# Deployed Site:
+
+https://drthisguy.github.io/02-Portfolio-CSS-Framework/
+
 
 Copyright:  Page Tyler 2019  MIT.
 
